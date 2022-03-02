@@ -1,0 +1,45 @@
+body {
+  background-color: rgb(243, 223, 167);
+  padding-bottom: 2em;
+}
+
+.col-sm-12 {
+  border-bottom: 5px solid black;
+}
+
+.col-sm-5 {
+  border-top: 1px solid black;
+  margin-top: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#felfele {
+  position: fixed;
+  bottom: 40px;
+  right: 60px;
+  text-decoration: none;
+  font-size: 1.5em;
+  background-color: teal;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+button {
+  border: none;
+  background-color: rgb(214, 23, 10);
+  color: white;
+  padding: 10px 5px;
+  border-radius: 3px;
+}
+
+#info {
+  color: green;
+  background-color: rgb(207, 203, 203);
+  padding: 5px;
+  border-radius: 3px;
+  visibility: hidden;
+}

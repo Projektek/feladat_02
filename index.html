@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./stilus.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+      integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+      crossorigin="anonymous"
+    ></script>
+    <title>Vitaminok</title>
+  </head>
+  <body>
+    <div class="container" id="fel">
+      <div class="row">
+        <div class="col-sm-3">
+          <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Vitaminok
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#A">A-vitamin</a>
+                    <a class="dropdown-item" href="#B1"
+                      >B<sub>1</sub>-vitamin</a
+                    >
+                    <a class="dropdown-item" href="#B2"
+                      >B<sub>2</sub>-vitamin</a
+                    >
+                    <a class="dropdown-item" href="#B12"
+                      >B<sub>12</sub>-vitamin</a
+                    >
+                    <a class="dropdown-item" href="#C">C-vitamin</a>
+                    <a class="dropdown-item" href="#D">D-vitamin</a>
+                    <a class="dropdown-item" href="#E">E-vitamin</a>
+                    <a class="dropdown-item" href="#K">K-vitamin</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="col-sm-6 d-flex justify-content-center">
+          <h1>Vitaminok</h1>
+        </div>
+        <div class="col-sm-3 d-flex justify-content-center">
+          <a class="navbar-brand" href="#szamit">Számítások</a>
+        </div>
+      </div>
+      <div class="tarto mb-4" id="A">
+        <div class="row">
+          <div class="col-sm-12 bg-success text-white">
+            <h1 class="text-center">A-vitamin</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 p-1">
+            <b>Funkciója: </b>növekedés, szürkületi látás, a szaruhártya
+            egészsége, fertőzéssel szembeni ellenállás. Hiánya fejlődési
+            zavarokat, farkasvakságot, a bőr szárazságát okozza.
+          </div>
+          <div class="col-sm-4 p-1">
+            <img src="./kepek/a-vitamin.jpg" alt="a-vitamin" class="w-100" />
+          </div>
+          <div class="col-sm-4 p-1">
+            <p>
+              <b>Forrásai:</b> tejtermékek, halmájolajak, tojássárgája. A
+              sárgarépában és zöldségfélékben található karotint<sup>1</sup> a
+              szervezet A-vitaminná alakítja.
+            </p>
+            <p><b>Ajánlott napi bevitel: </b> <span id="a-napi">1.5</span>mg</p>
+          </div>
+        </div>
+      </div>
+      <div class="tarto mb-4" id="B1">
+        <div class="row">
+          <div class="col-sm-12 bg-primary text-white">
+            <h1 class="text-center">B<sub>1</sub>-vitamin</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 p-1">
+            <b>Funkciója: </b>szénhidrát anyagcsere: az idegrendszer működése.
+            Hiánya vizenyősödést vagy végzetes fogyással járó beriberit<sup
+              >2</sup
+            >
+            okoz.
+          </div>
+          <div class="col-sm-4 p-1">
+            <img src="./kepek/b1-vitamin.jpg" alt="b1-vitamin" class="w-100" />
+          </div>
+          <div class="col-sm-4 p-1">
+            <p>
+              <b>Forrásai: </b>élesztő, tojássárgája, máj, búzacsíra, borsó,
+              bab.
+            </p>
+            <p><b>Ajánlott napi bevitel: </b> <span id="b1-napi">1</span>mg</p>
+          </div>
+        </div>
+      </div>
+      <div class="tarto mb-4" id="B2">
+        <div class="row">
+          <div class="col-sm-12 bg-warning text-white">
+            <h1 class="text-center">B<sub>2</sub>-vitamin</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 p-1">
+            <b>Funkciója: </b>szövetlégzés. Hiánya a nyelv és az ajak
+            gyulladását okozza.
+          </div>
+          <div class="col-sm-4 p-1">
+            <img src="./kepek/b2-vitamin.jpg" alt="b2-vitamin" class="w-100" />
+          </div>
+          <div class="col-sm-4 p-1">
+            <p>
+              <b>Forrásai: </b>élesztő, élesztő- és húskivonatok, tej, máj,
+              sajt, tojás, zöldségfélék.
+            </p>
+            <p>
+              <b>Ajánlott napi bevitel: </b> <span id="b2-napi">1.3</span>mg
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="tarto mb-4" id="B12">
+        <div class="row">
+          <div class="col-sm-12 bg-danger text-white">
+            <h1 class="text-center">B<sub>12</sub>-vitamin</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 p-1">
+            <p>
+              <b>Funkciója: </b>vérképződés. Hiánya vészes vérzékenységet okoz.
+            </p>
+          </div>
+          <div class="col-sm-4 p-1">
+            <img
+              src="./kepek/b12-vitamin.jpg"
+              alt="b12-vitamin"
+              class="w-100"
+            />
+          </div>
+          <div class="col-sm-4 p-1">
+            <p>
+              <b>Forrásai: </b>élesztő, hús, máj, vese, tej, sajt, tojás,
+              zöldségfélék.
+            </p>
+            <p>
+              <b>Ajánlott napi bevitel: </b> <span id="b12-napi">0.0024</span>mg
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="tarto mb-4" id="C">
+        <div class="row">
+          <div class="col-sm-12 bg-success text-white">
+            <h1 class="text-center">C-vitamin</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 p-1">
+            <b>Funkciója: </b>energiatermelés, anyagcserefolyamatok, fertőzéssel
+            szembeni ellenállás. Hiánya skorbutot<sup>3</sup> , vérzékenységet,
+            fáradékonyságot okoz.
+          </div>
+          <div class="col-sm-4 p-1">
+            <img src="./kepek/C-vitamin.jpg" alt="c-vitamin" class="w-100" />
+          </div>
+          <div class="col-sm-4 p-1">
+            <p><b>Forrásai: </b>paprika, citrom, zöldségek, gyümölcsök.</p>
+            <p>
+              <b>Ajánlott napi bevitel: </b> <span id="c-napi">1500</span>mg
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="tarto mb-4" id="D">
+        <div class="row">
+          <div class="col-sm-12 bg-primary text-white">
+            <h1 class="text-center">D-vitamin</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 p-1">
+            <b>Funkciója: </b>csontok egészséges fejlődése. Hiánya a csontok
+            görbülését, törékenységét, csontlágyulást okoz.
+          </div>
+          <div class="col-sm-4 p-1">
+            <img src="./kepek/d-vitamin.jpg" alt="d-vitamin" class="w-100" />
+          </div>
+          <div class="col-sm-4 p-1">
+            <p>
+              <b>Forrásai: </b>vaj, halmájolaj. A növényi olajokban található
+              előanyagot a szervezet alakítja D-vitaminná napsugárzás hatására.
+            </p>
+            <p><b>Ajánlott napi bevitel: </b> <span id="d-napi">0.1</span>mg</p>
+          </div>
+        </div>
+      </div>
+      <div class="tarto mb-4" id="E">
+        <div class="row">
+          <div class="col-sm-12 bg-warning text-white">
+            <h1 class="text-center">E-vitamin</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 p-1">
+            <b>Funkciója: </b>az idegrendszer, az izomzat és a here normális
+            működéséhez illetve a terhesség ki¬hordásához fontos. Hiánya nem
+            jellemző.
+          </div>
+          <div class="col-sm-4 p-1">
+            <img src="./kepek/e-vitamin.jpg" alt="e-vitamin" class="w-100" />
+          </div>
+          <div class="col-sm-4 p-1">
+            <p>
+              <b>Forrásai: </b>növényi magvak és olajok, saláták, zöldfőzelékek,
+              tej, vaj.
+            </p>
+            <p><b>Ajánlott napi bevitel: </b> <span id="e-napi">45</span>mg</p>
+          </div>
+        </div>
+      </div>
+      <div class="tarto mb-4" id="K">
+        <div class="row">
+          <div class="col-sm-12 bg-danger text-white">
+            <h1 class="text-center">K-vitamin</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 p-1">
+            <b>Funkciója: </b>megfelelő májműködés. Hiánya nem jellemző.
+          </div>
+          <div class="col-sm-4 p-1">
+            <img src="./kepek/k-vitamin.jpg" alt="k-vitamin" class="w-100" />
+          </div>
+          <div class="col-sm-4 p-1">
+            <p>
+              <b>Forrásai: </b>bélbaktériumok termelik, külső bevitele általában
+              nem szükséges.
+            </p>
+            <p>
+              <b>Ajánlott napi bevitel: </b> <span id="k-napi">0.07</span>mg
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row" id="szamit">
+        <div class="col-sm-12 bg-primary p-3">
+          <select id="szamitas">
+            <option value=""></option>
+            <option value="legkevesebb">
+              Legkevesebb napi ajánlott mennyiség
+            </option>
+            <option value="legtobb">Legtöbb napi ajánlott mennyiség</option>
+            <option value="osszes">Napi összes ajánlott mennyiség</option>
+          </select>
+          <br />
+          <br />
+          <button onclick="kiertekel()">Kiértékelés</button>
+          <p style="margin-top: 20px">
+            Lekért információ: <span id="info"></span>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-5">
+          <ul>
+            <li><sup>1</sup>az A-vitamin elővitaminja</li>
+            <li><sup>2</sup>szingaléz nyelvben: <em>gyengeség</em></li>
+            <li>
+              <sup>3</sup>fogínygyulladással és vérzéssel járó ritka betegség
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a id="felfele" href="#fel">Felfelé</a>
+    </div>
+    <script src="./feladat.js"></script>
+  </body>
+</html>
